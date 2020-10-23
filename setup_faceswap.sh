@@ -12,7 +12,7 @@
 
 ### Print some data to output file ###
 
-echo "SLURM_JOBID”=$SLURM_JOBID
+echo "SLURM_JOBID"=$SLURM_JOBID
 echo "SLURM_JOB_NODELIST"=$SLURM_JOB_NODELIST
 
 
