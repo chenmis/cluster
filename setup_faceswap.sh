@@ -19,5 +19,6 @@ echo "SLURM_JOB_NODELIST"=$SLURM_JOB_NODELIST
 ### Start you code below ####
 
 module load anaconda                          ### load anaconda module
-source activate base                          ### activating environment, environment must be configured before running the job
-python ../faceswap/setup.py                   ### execute jupyter lab command – replace with your own command e.g. ‘python my.py my_arg’
+source activate py37                          ### activating environment, environment must be configured before running the job
+python ../faceswap/faceswap.py extract -i /take000.mp4 -o /src000                   ### execute jupyter lab command – replace with your own command e.g. ‘python my.py my_arg’
+python ../faceswap/faceswap.py extract -i /take002.mp4 -o /src002
