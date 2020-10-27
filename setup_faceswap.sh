@@ -20,5 +20,6 @@ echo "SLURM_JOB_NODELIST"=$SLURM_JOB_NODELIST
 
 module load anaconda                          ### load anaconda module
 source activate py37                          ### activating environment, environment must be configured before running the job
+pip install --user tensorflow
 pip install --user pynvml
 python ../faceswap.py extract -i take000.mp4 -o src000
