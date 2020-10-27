@@ -23,4 +23,5 @@ source activate py37                          ### activating environment, enviro
 pip install --user tensorflow==2.2
 pip install --user opencv-python
 pip install --user pynvml
-python ../faceswap.py extract -i take000.mp4 -o src000
+pip install --user imageio_ffmpeg
+python ../faceswap/faceswap.py extract -i take000.mp4 -o src000
