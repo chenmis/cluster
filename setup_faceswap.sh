@@ -24,4 +24,5 @@ pip install --user tensorflow==2.2
 pip install --user opencv-python
 pip install --user pynvml
 pip install --user imageio_ffmpeg
+pip install --user fastcluster
 python ../faceswap/faceswap.py extract -i take000.mp4 -o src000
