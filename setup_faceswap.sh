@@ -25,4 +25,4 @@ pip install --user opencv-python
 pip install --user pynvml
 pip install --user imageio_ffmpeg
 pip install --user fastcluster
-python ../faceswap/faceswap.py extract -i take000.mp4 -o src000
+python ../faceswap/faceswap.py extract -i take002.mp4 -o src002
