@@ -31,9 +31,22 @@ pip install --user pathlib
 ### python ../faceswap/faceswap.py extract -i take002.mp4 -o src002 ###
 ### python ../faceswap/faceswap.py train -A src000 -B src002 -m train ###
 ### python ../faceswap/faceswap.py convert -i src000 -o converted -m train ###
-python ../faceswap/faceswap.py extract -h
-python ../faceswap/faceswap.py train -h
-python ../faceswap/faceswap.py convert -h
+### python ../faceswap/faceswap.py extract -h ###
+### python ../faceswap/faceswap.py train -h ###
+### python ../faceswap/faceswap.py convert -h ###
+
+mkdir faceSwapProject/faceA
+mkdir faceSwapProject/faceA
+mkdir faceSwapProject/modelAB
+mkdir faceSwapProject/TimelapseAB
+
+extract -i faceSwapProject/src/faceA.mp4 -o faceSwapProject/faceA
+extract -i faceSwapProject/src/faceB.mp4 -o faceSwapProject/faceB
+
+train -A faceSwapProject/faceA -B faceSwapProject/faceB -m faceSwapProject/ModelAB -tia faceSwapProject/faceA -tib faceSwapProject/faceB -to faceSwapProject/TimelapseAB
+
+convert -i faceSwapProject/src/faceA.mp4 -o faceSwapProject -m faceSwapProject/ModelAB
+
 
 
 
