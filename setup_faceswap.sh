@@ -3,7 +3,7 @@
 
 #SBATCH --partition gtx1080                         ### specify partition name where to run a job. NVidia 2080: short - 7 days; 1080: gtx1080 - 7 days; debug – for testing - 2 hours and 1 job at a time
 #SBATCH --time 0-07:00:00                           ### limit the time of job running. Make sure it is not greater than the partition time limit!! Format: D-H:MM:SS
-#SBATCH --job-name install faceswap                 ### name of the job. replace my_job with your desired job name
+#SBATCH --job-name run_faceswap                 ### name of the job. replace my_job with your desired job name
 #SBATCH --output faceswap-id-%J.out                 ### output log for running job - %J is the job number variable
 #SBATCH --mail-user=chenmis@post.bgu.ac.il          ### users email for sending job status notifications
 #SBATCH --mail-type=BEGIN,END,FAIL                  ### conditions when to send the email. ALL,BEGIN,END,FAIL, REQUEU, NONE
