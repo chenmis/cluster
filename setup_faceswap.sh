@@ -20,12 +20,12 @@ echo "SLURM_JOB_NODELIST"=$SLURM_JOB_NODELIST
 
 module load anaconda                          ### load anaconda module
 source activate py37                          ### activating environment, environment must be configured before running the job
-pip install --user tensorflow==2.2
-pip install --user opencv-python 
-pip install --user pynvml
-pip install --user imageio_ffmpeg
-pip install --user fastcluster 
-pip install --user pathlib 
+### pip install --user tensorflow==2.2 ###
+### pip install --user opencv-python ### 
+### pip install --user pynvml ###
+### pip install --user imageio_ffmpeg ###
+### pip install --user fastcluster ### 
+### pip install --user pathlib ###
 
 ### python ../faceswap/faceswap.py extract -i take000.mp4 -o src000 ###
 ### python ../faceswap/faceswap.py extract -i take002.mp4 -o src002 ###
@@ -35,17 +35,17 @@ pip install --user pathlib
 ### python ../faceswap/faceswap.py train -h ###
 ### python ../faceswap/faceswap.py convert -h ###
 
-mkdir faceSwapProject/faceA
-mkdir faceSwapProject/faceA
-mkdir faceSwapProject/modelAB
-mkdir faceSwapProject/TimelapseAB
+### mkdir faceSwapProject/faceA ###
+### mkdir faceSwapProject/faceA ###
+### mkdir faceSwapProject/modelAB ###
+### mkdir faceSwapProject/TimelapseAB ###
 
 python ../faceswap/faceswap.py extract -i faceSwapProject/src/faceA.mp4 -o faceSwapProject/faceA
 python ../faceswap/faceswap.py extract -i faceSwapProject/src/faceB.mp4 -o faceSwapProject/faceB
 
 python ../faceswap/faceswap.py train -A faceSwapProject/faceA -B faceSwapProject/faceB -m faceSwapProject/ModelAB -tia faceSwapProject/faceA -tib faceSwapProject/faceB -to faceSwapProject/TimelapseAB
 
-python ../faceswap/faceswap.py convert -i faceSwapProject/src/faceA.mp4 -o faceSwapProject -m faceSwapProject/ModelAB
+### python ../faceswap/faceswap.py convert -i faceSwapProject/src/faceA.mp4 -o faceSwapProject -m faceSwapProject/ModelAB ###
 
 
 
