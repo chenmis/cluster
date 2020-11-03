@@ -1,0 +1,494 @@
+10/30/2020 14:39:40 MainProcess     MainThread      logger          log_setup                 INFO     Log level set to: INFO
+10/30/2020 14:39:40 MainProcess     MainThread      gpu_stats       _log                      DEBUG    Initializing GPUStats
+10/30/2020 14:39:40 MainProcess     MainThread      gpu_stats       _log                      DEBUG    OS is not macOS. Trying pynvml
+10/30/2020 14:39:40 MainProcess     MainThread      gpu_stats       _log                      DEBUG    GPU Device count: 1
+10/30/2020 14:39:40 MainProcess     MainThread      gpu_stats       _log                      DEBUG    Active GPU Devices: [0]
+10/30/2020 14:39:40 MainProcess     MainThread      gpu_stats       _log                      DEBUG    GPU Handles found: 1
+10/30/2020 14:39:40 MainProcess     MainThread      gpu_stats       _log                      DEBUG    GPU Driver: 450.51.06
+10/30/2020 14:39:40 MainProcess     MainThread      gpu_stats       _log                      DEBUG    GPU Devices: ['GeForce GTX 1080 Ti']
+10/30/2020 14:39:40 MainProcess     MainThread      gpu_stats       _log                      DEBUG    GPU VRAM: [11178.5]
+10/30/2020 14:39:40 MainProcess     MainThread      gpu_stats       _log                      DEBUG    Initialized GPUStats
+10/30/2020 14:39:40 MainProcess     MainThread      launcher        _configure_backend        DEBUG    Executing: train. PID: 21464
+10/30/2020 14:39:43 MainProcess     MainThread      tpu_cluster_resolver <module>                  DEBUG    Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+10/30/2020 14:39:56 MainProcess     MainThread      launcher        _test_for_tf_version      DEBUG    Installed Tensorflow Version: 2.2
+10/30/2020 14:39:56 MainProcess     MainThread      queue_manager   __init__                  DEBUG    Initializing QueueManager
+10/30/2020 14:39:56 MainProcess     MainThread      queue_manager   __init__                  DEBUG    Initialized QueueManager
+10/30/2020 14:39:56 MainProcess     MainThread      train           __init__                  DEBUG    Initializing Train: (args: Namespace(alignments_path_a=None, alignments_path_b=None, batch_size=16, colab=False, configfile=None, distributed=False, exclude_gpus=None, func=<bound method ScriptExecutor.execute_script of <lib.cli.launcher.ScriptExecutor object at 0x7fafe53a0c10>>, input_a='/home/chenmis/cluster/faceSwapProject/faceA', input_b='/home/chenmis/cluster/faceSwapProject/faceB', iterations=1000000, logfile=None, loglevel='INFO', model_dir='/home/chenmis/cluster/faceSwapProject/ModelAB', no_augment_color=False, no_flip=False, no_logs=False, preview=False, preview_scale=50, redirect_gui=False, save_interval=250, snapshot_interval=25000, timelapse_input_a='/home/chenmis/cluster/faceSwapProject/faceA', timelapse_input_b='/home/chenmis/cluster/faceSwapProject/faceB', timelapse_output='/home/chenmis/cluster/faceSwapProject/TimelapseAB', trainer='original', warp_to_landmarks=False, write_image=False)
+10/30/2020 14:39:56 MainProcess     MainThread      train           _get_images               DEBUG    Getting image paths
+10/30/2020 14:39:56 MainProcess     MainThread      utils           get_image_paths           DEBUG    Scanned Folder contains 95 files
+10/30/2020 14:39:56 MainProcess     MainThread      utils           get_image_paths           DEBUG    Returning 95 images
+10/30/2020 14:39:56 MainProcess     MainThread      utils           get_image_paths           DEBUG    Scanned Folder contains 97 files
+10/30/2020 14:39:56 MainProcess     MainThread      utils           get_image_paths           DEBUG    Returning 97 images
+10/30/2020 14:39:56 MainProcess     MainThread      train           _get_images               INFO     Model A Directory: /home/chenmis/cluster/faceSwapProject/faceA
+10/30/2020 14:39:56 MainProcess     MainThread      train           _get_images               INFO     Model B Directory: /home/chenmis/cluster/faceSwapProject/faceB
+10/30/2020 14:39:56 MainProcess     MainThread      train           _get_images               DEBUG    Got image paths: [('a', '95 images'), ('b', '97 images')]
+10/30/2020 14:39:56 MainProcess     MainThread      train           _validate_image_counts    WARNING  At least one of your input folders contains fewer than 250 images. Results are likely to be poor.
+10/30/2020 14:39:56 MainProcess     MainThread      train           _validate_image_counts    WARNING  You need to provide a significant number of images to successfully train a Neural Network. Aim for between 500 - 5000 images per side.
+10/30/2020 14:39:56 MainProcess     MainThread      utils           get_folder                DEBUG    Requested path: '/home/chenmis/cluster/faceSwapProject/TimelapseAB'
+10/30/2020 14:39:56 MainProcess     MainThread      utils           get_folder                DEBUG    Returning: '/home/chenmis/cluster/faceSwapProject/TimelapseAB'
+10/30/2020 14:39:56 MainProcess     MainThread      train           _set_timelapse            DEBUG    Timelapse enabled: {'input_a': '/home/chenmis/cluster/faceSwapProject/faceA', 'input_b': '/home/chenmis/cluster/faceSwapProject/faceB', 'output': '/home/chenmis/cluster/faceSwapProject/TimelapseAB'}
+10/30/2020 14:39:56 MainProcess     MainThread      train           __init__                  DEBUG    Initialized Train
+10/30/2020 14:39:56 MainProcess     MainThread      train           process                   DEBUG    Starting Training Process
+10/30/2020 14:39:56 MainProcess     MainThread      train           process                   INFO     Training data directory: /home/chenmis/cluster/faceSwapProject/ModelAB
+10/30/2020 14:39:56 MainProcess     MainThread      train           _start_thread             DEBUG    Launching Trainer thread
+10/30/2020 14:39:56 MainProcess     MainThread      multithreading  __init__                  DEBUG    Initializing MultiThread: (target: '_training', thread_count: 1)
+10/30/2020 14:39:56 MainProcess     MainThread      multithreading  __init__                  DEBUG    Initialized MultiThread: '_training'
+10/30/2020 14:39:56 MainProcess     MainThread      multithreading  start                     DEBUG    Starting thread(s): '_training'
+10/30/2020 14:39:56 MainProcess     MainThread      multithreading  start                     DEBUG    Starting thread 1 of 1: '_training_0'
+10/30/2020 14:39:56 MainProcess     MainThread      multithreading  start                     DEBUG    Started all threads '_training': 1
+10/30/2020 14:39:56 MainProcess     MainThread      train           _start_thread             DEBUG    Launched Trainer thread
+10/30/2020 14:39:56 MainProcess     MainThread      train           _monitor                  DEBUG    Launching Monitor
+10/30/2020 14:39:56 MainProcess     MainThread      train           _monitor                  INFO     ===================================================
+10/30/2020 14:39:56 MainProcess     MainThread      train           _monitor                  INFO       Starting
+10/30/2020 14:39:56 MainProcess     MainThread      train           _monitor                  INFO       Press 'ENTER' to save and quit
+10/30/2020 14:39:56 MainProcess     MainThread      train           _monitor                  INFO       Press 'S' to save model weights immediately
+10/30/2020 14:39:56 MainProcess     MainThread      train           _monitor                  INFO     ===================================================
+Traceback (most recent call last):
+  File "/home/chenmis/faceswap/lib/cli/launcher.py", line 182, in execute_script
+    process.process()
+  File "/home/chenmis/faceswap/scripts/train.py", line 179, in process
+    err = self._monitor(thread)
+  File "/home/chenmis/faceswap/scripts/train.py", line 360, in _monitor
+    keypress = KBHit(is_gui=self._args.redirect_gui)
+  File "/home/chenmis/faceswap/lib/keypress.py", line 42, in __init__
+    self.new_term = termios.tcgetattr(self.file_desc)
+termios.error: (25, 'Inappropriate ioctl for device')
+
+============ System Information ============
+encoding:            UTF-8
+git_branch:          Not Found
+git_commits:         Not Found
+gpu_cuda:            11.0
+gpu_cudnn:           No global version found. Check Conda packages for Conda cuDNN
+gpu_devices:         GPU_0: GeForce GTX 1080 Ti
+gpu_devices_active:  GPU_0
+gpu_driver:          450.51.06
+gpu_vram:            GPU_0: 11178MB
+os_machine:          x86_64
+os_platform:         Linux-3.10.0-1127.18.2.el7.x86_64-x86_64-with-centos-7.8.2003-Core
+os_release:          3.10.0-1127.18.2.el7.x86_64
+py_command:          ../faceswap/faceswap.py train -A faceSwapProject/faceA -B faceSwapProject/faceB -m faceSwapProject/ModelAB -tia faceSwapProject/faceA -tib faceSwapProject/faceB -to faceSwapProject/TimelapseAB
+py_conda_version:    conda 4.8.3
+py_implementation:   CPython
+py_version:          3.7.8
+py_virtual_env:      True
+sys_cores:           12
+sys_processor:       x86_64
+sys_ram:             Total: 64188MB, Available: 57839MB, Used: 5490MB, Free: 2448MB
+
+=============== Pip Packages ===============
+absl-py==0.10.0
+aiohttp @ file:///home/conda/feedstock_root/build_artifacts/aiohttp_1603665982410/work
+astor @ file:///home/conda/feedstock_root/build_artifacts/astor_1593610464257/work
+astunparse==1.6.3
+async-timeout==3.0.1
+attrs @ file:///home/conda/feedstock_root/build_artifacts/attrs_1599308529326/work
+blinker==1.4
+brotlipy==0.7.0
+cachetools==4.1.1
+certifi==2020.6.20
+cffi @ file:///home/conda/feedstock_root/build_artifacts/cffi_1602537219008/work
+chardet @ file:///home/conda/feedstock_root/build_artifacts/chardet_1602255309768/work
+click==7.1.2
+cryptography @ file:///home/conda/feedstock_root/build_artifacts/cryptography_1602614063317/work
+cycler==0.10.0
+fastcluster==1.1.26
+ffmpy==0.2.3
+gast==0.3.3
+google-auth==1.22.1
+google-auth-oauthlib==0.4.1
+google-pasta==0.2.0
+grpcio==1.33.1
+h5py==2.10.0
+idna @ file:///home/conda/feedstock_root/build_artifacts/idna_1593328102638/work
+imageio @ file:///home/conda/feedstock_root/build_artifacts/imageio_1594044661732/work
+imageio-ffmpeg==0.4.2
+importlib-metadata @ file:///home/conda/feedstock_root/build_artifacts/importlib-metadata_1602263269022/work
+joblib @ file:///home/conda/feedstock_root/build_artifacts/joblib_1601671685479/work
+Keras==2.2.4
+Keras-Applications==1.0.8
+Keras-Preprocessing==1.1.2
+kiwisolver @ file:///home/conda/feedstock_root/build_artifacts/kiwisolver_1602517221725/work
+Markdown==3.3.3
+matplotlib==3.1.3
+multidict @ file:///home/conda/feedstock_root/build_artifacts/multidict_1602413133191/work
+numpy @ file:///home/conda/feedstock_root/build_artifacts/numpy_1603047558839/work
+nvidia-ml-py3 @ git+https://github.com/deepfakes/nvidia-ml-py3.git@6fc29ac84b32bad877f078cb4a777c1548a00bf6
+oauthlib==3.1.0
+olefile @ file:///home/conda/feedstock_root/build_artifacts/olefile_1602866521163/work
+opencv-python==4.4.0.44
+opt-einsum==3.3.0
+pathlib==1.0.1
+Pillow @ file:///home/conda/feedstock_root/build_artifacts/pillow_1603406595057/work
+plaidml==0.7.0
+plaidml-keras==0.7.0
+protobuf==3.13.0
+psutil==5.7.2
+pyasn1==0.4.8
+pyasn1-modules==0.2.8
+pycparser @ file:///home/conda/feedstock_root/build_artifacts/pycparser_1593275161868/work
+PyJWT==1.7.1
+pynvml==8.0.4
+pyOpenSSL==19.1.0
+pyparsing==2.4.7
+PySocks @ file:///home/conda/feedstock_root/build_artifacts/pysocks_1602326924965/work
+python-dateutil==2.8.1
+PyYAML==5.3.1
+requests @ file:///home/conda/feedstock_root/build_artifacts/requests_1592425495151/work
+requests-oauthlib==1.3.0
+rsa==4.6
+scikit-learn @ file:///home/conda/feedstock_root/build_artifacts/scikit-learn_1603019819011/work
+scipy==1.4.1
+six @ file:///home/conda/feedstock_root/build_artifacts/six_1590081179328/work
+tensorboard==2.2.2
+tensorboard-plugin-wit==1.7.0
+tensorflow==2.2.0
+tensorflow-estimator==2.2.0
+termcolor==1.1.0
+threadpoolctl @ file:///tmp/tmp79xdzxkt/threadpoolctl-2.1.0-py3-none-any.whl
+tornado @ file:///home/conda/feedstock_root/build_artifacts/tornado_1602488893411/work
+tqdm==4.50.2
+typing-extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1602702424206/work
+urllib3 @ file:///home/conda/feedstock_root/build_artifacts/urllib3_1603125704209/work
+Werkzeug==1.0.1
+wrapt==1.12.1
+yarl @ file:///home/conda/feedstock_root/build_artifacts/yarl_1602671471836/work
+zipp @ file:///home/conda/feedstock_root/build_artifacts/zipp_1603668650351/work
+
+============== Conda Packages ==============
+# packages in environment at /home/chenmis/.conda/envs/py37:
+#
+# Name                    Version                   Build  Channel
+_libgcc_mutex             0.1                 conda_forge    conda-forge
+_openmp_mutex             4.5                       1_gnu    conda-forge
+_tflow_select             2.1.0                       gpu    defaults
+absl-py                   0.10.0           py37hc8dfbb8_1    conda-forge
+aiohttp                   3.7.1            py37h8f50634_0    conda-forge
+astor                     0.8.1              pyh9f0ad1d_0    conda-forge
+astunparse                1.6.3                      py_0    defaults
+async-timeout             3.0.1                   py_1000    conda-forge
+attrs                     20.2.0             pyh9f0ad1d_0    conda-forge
+blinker                   1.4                        py_1    conda-forge
+brotlipy                  0.7.0           py37hb5d75c8_1001    conda-forge
+bzip2                     1.0.8                h516909a_3    conda-forge
+c-ares                    1.16.1               h516909a_3    conda-forge
+ca-certificates           2020.6.20            hecda079_0    conda-forge
+cachetools                4.1.1                      py_0    conda-forge
+certifi                   2020.6.20        py37he5f6b98_2    conda-forge
+cffi                      1.14.3           py37h00ebd2e_1    conda-forge
+chardet                   3.0.4           py37he5f6b98_1008    conda-forge
+click                     7.1.2              pyh9f0ad1d_0    conda-forge
+cryptography              3.1.1            py37hff6837a_1    conda-forge
+cudatoolkit               10.1.243             h6bb024c_0    defaults
+cudnn                     7.6.5                cuda10.1_0    defaults
+cupti                     10.1.168                      0    defaults
+cycler                    0.10.0                     py_2    conda-forge
+dbus                      1.13.6               h7a60e0d_1    conda-forge
+expat                     2.2.9                he1b5a44_2    conda-forge
+fastcluster               1.1.26           py37h9fdb41a_2    conda-forge
+ffmpeg                    4.3.1                h3215721_1    conda-forge
+ffmpy                     0.2.3                    pypi_0    pypi
+fontconfig                2.13.1            h86ecdb6_1001    conda-forge
+freetype                  2.10.4               he06d7ca_0    conda-forge
+gast                      0.3.3                      py_0    conda-forge
+gettext                   0.19.8.1          hf34092f_1004    conda-forge
+glib                      2.66.2               he1b5a44_0    conda-forge
+gmp                       6.2.0                he1b5a44_3    conda-forge
+gnutls                    3.6.13               h79a8f9a_0    conda-forge
+google-auth               1.22.0                     py_0    conda-forge
+google-auth-oauthlib      0.4.1                      py_2    conda-forge
+google-pasta              0.2.0              pyh8c360ce_0    conda-forge
+grpcio                    1.31.0           py37hb0870dc_0    conda-forge
+gst-plugins-base          1.14.5               h0935bb2_2    conda-forge
+gstreamer                 1.14.5               h36ae1b5_2    conda-forge
+h5py                      2.10.0          nompi_py37hf7afa78_105    conda-forge
+hdf5                      1.10.6          nompi_h1022a3e_1110    conda-forge
+icu                       64.2                 he1b5a44_1    conda-forge
+idna                      2.10               pyh9f0ad1d_0    conda-forge
+imageio                   2.9.0                      py_0    conda-forge
+imageio-ffmpeg            0.4.2                      py_0    conda-forge
+importlib-metadata        2.0.0                      py_1    conda-forge
+joblib                    0.17.0                     py_0    conda-forge
+jpeg                      9d                   h516909a_0    conda-forge
+keras                     2.2.4                    pypi_0    pypi
+keras-applications        1.0.8                    pypi_0    pypi
+keras-preprocessing       1.1.0                      py_0    conda-forge
+kiwisolver                1.2.0            py37h99015e2_1    conda-forge
+krb5                      1.17.1               hfafb76e_3    conda-forge
+lame                      3.100             h14c3975_1001    conda-forge
+lcms2                     2.11                 hbd6801e_0    conda-forge
+ld_impl_linux-64          2.35                 h769bd43_9    conda-forge
+libblas                   3.9.0                2_openblas    conda-forge
+libcblas                  3.9.0                2_openblas    conda-forge
+libcurl                   7.71.1               hcdd3856_8    conda-forge
+libedit                   3.1.20191231         he28a2e2_2    conda-forge
+libev                     4.33                 h516909a_1    conda-forge
+libffi                    3.2.1             he1b5a44_1007    conda-forge
+libgcc-ng                 9.3.0               h5dbcf3e_17    conda-forge
+libgfortran-ng            9.3.0               he4bcb1c_17    conda-forge
+libgfortran5              9.3.0               he4bcb1c_17    conda-forge
+libglib                   2.66.2               h0dae87d_0    conda-forge
+libgomp                   9.3.0               h5dbcf3e_17    conda-forge
+libiconv                  1.16                 h516909a_0    conda-forge
+liblapack                 3.9.0                2_openblas    conda-forge
+libnghttp2                1.41.0               h8cfc5f6_2    conda-forge
+libopenblas               0.3.12          pthreads_h4812303_1    conda-forge
+libpng                    1.6.37               hed695b0_2    conda-forge
+libprotobuf               3.13.0.1             h8b12597_0    conda-forge
+libssh2                   1.9.0                hab1572f_5    conda-forge
+libstdcxx-ng              9.3.0               h2ae2ef3_17    conda-forge
+libtiff                   4.1.0                hc7e4089_6    conda-forge
+libuuid                   2.32.1            h14c3975_1000    conda-forge
+libwebp-base              1.1.0                h516909a_3    conda-forge
+libxcb                    1.13              h14c3975_1002    conda-forge
+libxml2                   2.9.10               hee79883_0    conda-forge
+lz4-c                     1.9.2                he1b5a44_3    conda-forge
+markdown                  3.3.3              pyh9f0ad1d_0    conda-forge
+matplotlib                3.1.3                    py37_0    conda-forge
+matplotlib-base           3.1.3            py37h250f245_0    conda-forge
+multidict                 4.7.5            py37h8f50634_2    conda-forge
+ncurses                   6.2                  he1b5a44_2    conda-forge
+nettle                    3.4.1             h1bed415_1002    conda-forge
+numpy                     1.19.2           py37h7008fea_1    conda-forge
+nvidia-ml-py3             7.352.1                  pypi_0    pypi
+oauthlib                  3.0.1                      py_0    conda-forge
+olefile                   0.46               pyh9f0ad1d_1    conda-forge
+opencv-python             4.4.0.44                 pypi_0    pypi
+openh264                  2.1.1                h8b12597_0    conda-forge
+openssl                   1.1.1h               h516909a_0    conda-forge
+opt-einsum                3.3.0                    pypi_0    pypi
+opt_einsum                3.3.0                      py_0    conda-forge
+pcre                      8.44                 he1b5a44_0    conda-forge
+pillow                    8.0.1            py37h718be6c_0    conda-forge
+pip                       20.2.4                     py_0    conda-forge
+plaidml                   0.7.0                    pypi_0    pypi
+plaidml-keras             0.7.0                    pypi_0    pypi
+protobuf                  3.13.0.1         py37h3340039_1    conda-forge
+pthread-stubs             0.4               h14c3975_1001    conda-forge
+pyasn1                    0.4.8                      py_0    conda-forge
+pyasn1-modules            0.2.7                      py_0    conda-forge
+pycparser                 2.20               pyh9f0ad1d_2    conda-forge
+pyjwt                     1.7.1                      py_0    conda-forge
+pynvml                    8.0.4                    pypi_0    pypi
+pyopenssl                 19.1.0                     py_1    conda-forge
+pyparsing                 2.4.7              pyh9f0ad1d_0    conda-forge
+pyqt                      5.9.2            py37hcca6a23_4    conda-forge
+pysocks                   1.7.1            py37he5f6b98_2    conda-forge
+python                    3.7.8           h6f2ec95_1_cpython    conda-forge
+python-dateutil           2.8.1                      py_0    conda-forge
+python_abi                3.7                     1_cp37m    conda-forge
+pyyaml                    5.3.1                    pypi_0    pypi
+qt                        5.9.7                h0c104cb_3    conda-forge
+readline                  8.0                  he28a2e2_2    conda-forge
+requests                  2.24.0             pyh9f0ad1d_0    conda-forge
+requests-oauthlib         1.3.0              pyh9f0ad1d_0    conda-forge
+rsa                       4.6                pyh9f0ad1d_0    conda-forge
+scikit-learn              0.23.2           py37hbb8adca_1    conda-forge
+scipy                     1.4.1                    pypi_0    pypi
+setuptools                49.6.0           py37he5f6b98_2    conda-forge
+sip                       4.19.8           py37hf484d3e_0    defaults
+six                       1.15.0             pyh9f0ad1d_0    conda-forge
+sqlite                    3.33.0               h4cf870e_1    conda-forge
+tensorboard               2.2.2                    pypi_0    pypi
+tensorboard-plugin-wit    1.7.0              pyh9f0ad1d_0    conda-forge
+tensorflow                2.2.0           gpu_py37h1a511ff_0    defaults
+tensorflow-base           2.2.0           gpu_py37h8a81be8_0    defaults
+tensorflow-estimator      2.2.0              pyh95af2a2_0    conda-forge
+tensorflow-gpu            2.2.0                h0d30ee6_0    defaults
+termcolor                 1.1.0                      py_2    conda-forge
+threadpoolctl             2.1.0              pyh5ca1d4c_0    conda-forge
+tk                        8.6.10               hed695b0_1    conda-forge
+tornado                   6.0.4            py37h8f50634_2    conda-forge
+typing-extensions         3.7.4.3                       0    conda-forge
+typing_extensions         3.7.4.3                    py_0    conda-forge
+urllib3                   1.25.11                    py_0    conda-forge
+werkzeug                  1.0.1              pyh9f0ad1d_0    conda-forge
+wheel                     0.35.1             pyh9f0ad1d_0    conda-forge
+wrapt                     1.12.1           py37h8f50634_1    conda-forge
+x264                      1!152.20180806       h14c3975_0    conda-forge
+xorg-libxau               1.0.9                h14c3975_0    conda-forge
+xorg-libxdmcp             1.1.3                h516909a_0    conda-forge
+xz                        5.2.5                h516909a_1    conda-forge
+yarl                      1.6.2            py37h8f50634_0    conda-forge
+zipp                      3.4.0                      py_0    conda-forge
+zlib                      1.2.11            h516909a_1010    conda-forge
+zstd                      1.4.5                h6597ccf_2    conda-forge
+
+================= Configs ==================
+--------- .faceswap ---------
+backend:                  nvidia
+
+--------- convert.ini ---------
+
+[color.color_transfer]
+clip:                     True
+preserve_paper:           True
+
+[color.manual_balance]
+colorspace:               HSV
+balance_1:                0.0
+balance_2:                0.0
+balance_3:                0.0
+contrast:                 0.0
+brightness:               0.0
+
+[color.match_hist]
+threshold:                99.0
+
+[mask.box_blend]
+type:                     gaussian
+distance:                 11.0
+radius:                   5.0
+passes:                   1
+
+[mask.mask_blend]
+type:                     normalized
+kernel_size:              3
+passes:                   4
+threshold:                4
+erosion:                  0.0
+
+[scaling.sharpen]
+method:                   none
+amount:                   150
+radius:                   0.3
+threshold:                5.0
+
+[writer.ffmpeg]
+container:                mp4
+codec:                    libx264
+crf:                      23
+preset:                   medium
+tune:                     none
+profile:                  auto
+level:                    auto
+skip_mux:                 False
+
+[writer.gif]
+fps:                      25
+loop:                     0
+palettesize:              256
+subrectangles:            False
+
+[writer.opencv]
+format:                   png
+draw_transparent:         False
+jpg_quality:              75
+png_compress_level:       3
+
+[writer.pillow]
+format:                   png
+draw_transparent:         False
+optimize:                 False
+gif_interlace:            True
+jpg_quality:              75
+png_compress_level:       3
+tif_compression:          tiff_deflate
+
+--------- extract.ini ---------
+
+[global]
+allow_growth:             False
+
+[align.fan]
+batch-size:               12
+
+[detect.cv2_dnn]
+confidence:               50
+
+[detect.mtcnn]
+minsize:                  20
+threshold_1:              0.6
+threshold_2:              0.7
+threshold_3:              0.7
+scalefactor:              0.709
+batch-size:               8
+
+[detect.s3fd]
+confidence:               70
+batch-size:               4
+
+[mask.unet_dfl]
+batch-size:               8
+
+[mask.vgg_clear]
+batch-size:               6
+
+[mask.vgg_obstructed]
+batch-size:               2
+
+--------- train.ini ---------
+
+[global]
+coverage:                 68.75
+icnr_init:                False
+conv_aware_init:          False
+optimizer:                adam
+learning_rate:            5e-05
+reflect_padding:          False
+allow_growth:             False
+mixed_precision:          False
+convert_batchsize:        16
+
+[global.loss]
+loss_function:            ssim
+mask_loss_function:       mse
+l2_reg_term:              100
+eye_multiplier:           3
+mouth_multiplier:         2
+penalized_mask_loss:      True
+mask_type:                extended
+mask_blur_kernel:         3
+mask_threshold:           4
+learn_mask:               False
+
+[model.dfl_h128]
+lowmem:                   False
+
+[model.dfl_sae]
+input_size:               128
+clipnorm:                 True
+architecture:             df
+autoencoder_dims:         0
+encoder_dims:             42
+decoder_dims:             21
+multiscale_decoder:       False
+
+[model.dlight]
+features:                 best
+details:                  good
+output_size:              256
+
+[model.original]
+lowmem:                   False
+
+[model.realface]
+input_size:               64
+output_size:              128
+dense_nodes:              1536
+complexity_encoder:       128
+complexity_decoder:       512
+
+[model.unbalanced]
+input_size:               128
+lowmem:                   False
+clipnorm:                 True
+nodes:                    1024
+complexity_encoder:       128
+complexity_decoder_a:     384
+complexity_decoder_b:     512
+
+[model.villain]
+lowmem:                   False
+
+[trainer.original]
+preview_images:           14
+zoom_amount:              5
+rotation_range:           10
+shift_range:              5
+flip_chance:              50
+disable_warp:             False
+color_lightness:          30
+color_ab:                 8
+color_clahe_chance:       50
+color_clahe_max_size:     4
