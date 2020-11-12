@@ -1,0 +1,62 @@
+SLURM_JOBID=51853
+SLURM_JOB_NODELIST=dt-1080-01
+Analyzing Video:   0%|          | 0/6 [00:00<?, ?secs/s]                                                        Setting Faceswap backend to NVIDIA
+11/12/2020 14:34:50 INFO     Log level set to: INFO
+11/12/2020 14:37:29 INFO     Output Directory: /home/chenmis/cluster/faceSwapProject/faceA
+11/12/2020 14:37:31 INFO     Loading Detect from S3Fd plugin...
+11/12/2020 14:37:34 INFO     Loading Align from Fan plugin...
+11/12/2020 14:37:34 INFO     Loading Mask from Components plugin...
+11/12/2020 14:37:35 INFO     Loading Mask from Extended plugin...
+11/12/2020 14:37:35 INFO     Starting, this may take a while...
+11/12/2020 14:37:35 INFO     Initializing S3FD (Detect)...
+11/12/2020 14:38:11 INFO     Initialized S3FD (Detect) with batchsize of 4
+11/12/2020 14:38:11 INFO     Initializing FAN (Align)...
+11/12/2020 14:38:52 INFO     Initialized FAN (Align) with batchsize of 12
+11/12/2020 14:38:52 INFO     Initializing Components (Mask)...
+11/12/2020 14:38:52 INFO     Initialized Components (Mask) with batchsize of 1
+11/12/2020 14:38:52 INFO     Initializing Extended (Mask)...
+11/12/2020 14:38:52 INFO     Initialized Extended (Mask) with batchsize of 1
+Running pass 1 of 1: Extraction:   0%|          | 0/95 [00:00<?, ?it/s]Running pass 1 of 1: Extraction:   1%|          | 1/95 [00:00<01:24,  1.11it/s]Running pass 1 of 1: Extraction:   1%|          | 1/95 [00:00<01:24,  1.11it/s]Running pass 1 of 1: Extraction:   5%|▌         | 5/95 [00:01<00:57,  1.56it/s]Running pass 1 of 1: Extraction:   5%|▌         | 5/95 [00:01<00:57,  1.56it/s]Running pass 1 of 1: Extraction:   9%|▉         | 9/95 [00:01<00:39,  2.19it/s]Running pass 1 of 1: Extraction:   9%|▉         | 9/95 [00:01<00:39,  2.19it/s]Running pass 1 of 1: Extraction:  16%|█▌        | 15/95 [00:01<00:26,  3.07it/s]Running pass 1 of 1: Extraction:  16%|█▌        | 15/95 [00:01<00:26,  3.07it/s]Running pass 1 of 1: Extraction:  23%|██▎       | 22/95 [00:01<00:16,  4.30it/s]Running pass 1 of 1: Extraction:  23%|██▎       | 22/95 [00:01<00:16,  4.30it/s]Running pass 1 of 1: Extraction:  29%|██▉       | 28/95 [00:01<00:12,  5.16it/s]Running pass 1 of 1: Extraction:  29%|██▉       | 28/95 [00:01<00:12,  5.16it/s]Running pass 1 of 1: Extraction:  35%|███▍      | 33/95 [00:02<00:08,  7.04it/s]Running pass 1 of 1: Extraction:  35%|███▍      | 33/95 [00:02<00:08,  7.04it/s]Running pass 1 of 1: Extraction:  39%|███▉      | 37/95 [00:02<00:07,  7.44it/s]Running pass 1 of 1: Extraction:  39%|███▉      | 37/95 [00:02<00:07,  7.43it/s]Running pass 1 of 1: Extraction:  44%|████▍     | 42/95 [00:02<00:05,  9.96it/s]Running pass 1 of 1: Extraction:  44%|████▍     | 42/95 [00:02<00:05,  9.95it/s]Running pass 1 of 1: Extraction:  51%|█████     | 48/95 [00:02<00:03, 13.25it/s]Running pass 1 of 1: Extraction:  51%|█████     | 48/95 [00:02<00:03, 13.25it/s]Running pass 1 of 1: Extraction:  56%|█████▌    | 53/95 [00:03<00:03, 10.62it/s]Running pass 1 of 1: Extraction:  56%|█████▌    | 53/95 [00:03<00:03, 10.62it/s]Running pass 1 of 1: Extraction:  62%|██████▏   | 59/95 [00:03<00:02, 14.05it/s]Running pass 1 of 1: Extraction:  62%|██████▏   | 59/95 [00:03<00:02, 14.04it/s]Running pass 1 of 1: Extraction:  67%|██████▋   | 64/95 [00:04<00:02, 12.26it/s]Running pass 1 of 1: Extraction:  67%|██████▋   | 64/95 [00:04<00:02, 12.25it/s]Running pass 1 of 1: Extraction:  77%|███████▋  | 73/95 [00:04<00:01, 13.32it/s]Running pass 1 of 1: Extraction:  77%|███████▋  | 73/95 [00:04<00:01, 13.32it/s]Running pass 1 of 1: Extraction:  83%|████████▎ | 79/95 [00:04<00:00, 17.30it/s]Running pass 1 of 1: Extraction:  83%|████████▎ | 79/95 [00:04<00:00, 17.29it/s]Running pass 1 of 1: Extraction:  89%|████████▉ | 85/95 [00:06<00:01,  7.94it/s]Running pass 1 of 1: Extraction:  89%|████████▉ | 85/95 [00:06<00:01,  7.89it/s]Running pass 1 of 1: Extraction: 100%|██████████| 95/95 [00:06<00:00, 10.86it/s]Running pass 1 of 1: Extraction: 100%|██████████| 95/95 [00:06<00:00, 10.86it/s]Running pass 1 of 1: Extraction: 100%|██████████| 95/95 [00:06<00:00, 14.48it/s]
+11/12/2020 14:38:59 INFO     Writing alignments to: '/home/chenmis/cluster/faceSwapProject/src/faceA_alignments.fsa'
+11/12/2020 14:38:59 INFO     -------------------------
+11/12/2020 14:38:59 INFO     Images found:        95
+11/12/2020 14:38:59 INFO     Faces detected:      95
+11/12/2020 14:38:59 INFO     -------------------------
+11/12/2020 14:38:59 INFO     Process Succesfully Completed. Shutting Down...
+Analyzing Video:   0%|          | 0/6 [00:00<?, ?secs/s]                                                        Setting Faceswap backend to NVIDIA
+11/12/2020 14:39:13 INFO     Log level set to: INFO
+11/12/2020 14:39:45 INFO     Output Directory: /home/chenmis/cluster/faceSwapProject/faceB
+11/12/2020 14:39:45 INFO     Loading Detect from S3Fd plugin...
+11/12/2020 14:39:45 INFO     Loading Align from Fan plugin...
+11/12/2020 14:39:45 INFO     Loading Mask from Components plugin...
+11/12/2020 14:39:45 INFO     Loading Mask from Extended plugin...
+11/12/2020 14:39:45 INFO     Starting, this may take a while...
+11/12/2020 14:39:45 INFO     Initializing S3FD (Detect)...
+11/12/2020 14:39:50 INFO     Initialized S3FD (Detect) with batchsize of 4
+11/12/2020 14:39:50 INFO     Initializing FAN (Align)...
+11/12/2020 14:40:08 INFO     Initialized FAN (Align) with batchsize of 12
+11/12/2020 14:40:08 INFO     Initializing Components (Mask)...
+11/12/2020 14:40:08 INFO     Initialized Components (Mask) with batchsize of 1
+11/12/2020 14:40:08 INFO     Initializing Extended (Mask)...
+11/12/2020 14:40:08 INFO     Initialized Extended (Mask) with batchsize of 1
+Running pass 1 of 1: Extraction:   0%|          | 0/97 [00:00<?, ?it/s]Running pass 1 of 1: Extraction:   1%|          | 1/97 [00:00<00:58,  1.65it/s]Running pass 1 of 1: Extraction:   1%|          | 1/97 [00:00<00:58,  1.65it/s]Running pass 1 of 1: Extraction:   5%|▌         | 5/97 [00:00<00:39,  2.31it/s]Running pass 1 of 1: Extraction:   5%|▌         | 5/97 [00:00<00:39,  2.31it/s]Running pass 1 of 1: Extraction:   9%|▉         | 9/97 [00:00<00:27,  3.20it/s]Running pass 1 of 1: Extraction:   9%|▉         | 9/97 [00:00<00:27,  3.20it/s]Running pass 1 of 1: Extraction:  13%|█▎        | 13/97 [00:01<00:19,  4.21it/s]Running pass 1 of 1: Extraction:  13%|█▎        | 13/97 [00:01<00:19,  4.20it/s]Running pass 1 of 1: Extraction:  19%|█▊        | 18/97 [00:01<00:13,  5.77it/s]Running pass 1 of 1: Extraction:  19%|█▊        | 18/97 [00:01<00:13,  5.77it/s]Running pass 1 of 1: Extraction:  24%|██▎       | 23/97 [00:01<00:09,  7.84it/s]Running pass 1 of 1: Extraction:  24%|██▎       | 23/97 [00:01<00:09,  7.83it/s]Running pass 1 of 1: Extraction:  29%|██▉       | 28/97 [00:01<00:08,  7.71it/s]Running pass 1 of 1: Extraction:  29%|██▉       | 28/97 [00:01<00:08,  7.71it/s]Running pass 1 of 1: Extraction:  36%|███▌      | 35/97 [00:02<00:05, 10.39it/s]Running pass 1 of 1: Extraction:  36%|███▌      | 35/97 [00:02<00:05, 10.39it/s]Running pass 1 of 1: Extraction:  40%|████      | 39/97 [00:02<00:05, 10.71it/s]Running pass 1 of 1: Extraction:  40%|████      | 39/97 [00:02<00:05, 10.71it/s]Running pass 1 of 1: Extraction:  45%|████▌     | 44/97 [00:02<00:03, 13.92it/s]Running pass 1 of 1: Extraction:  45%|████▌     | 44/97 [00:02<00:03, 13.91it/s]Running pass 1 of 1: Extraction:  51%|█████     | 49/97 [00:03<00:04, 11.43it/s]Running pass 1 of 1: Extraction:  51%|█████     | 49/97 [00:03<00:04, 11.43it/s]Running pass 1 of 1: Extraction:  58%|█████▊    | 56/97 [00:03<00:02, 14.97it/s]Running pass 1 of 1: Extraction:  58%|█████▊    | 56/97 [00:03<00:02, 14.97it/s]Running pass 1 of 1: Extraction:  63%|██████▎   | 61/97 [00:03<00:02, 15.07it/s]Running pass 1 of 1: Extraction:  63%|██████▎   | 61/97 [00:03<00:02, 15.06it/s]Running pass 1 of 1: Extraction:  69%|██████▉   | 67/97 [00:03<00:01, 19.17it/s]Running pass 1 of 1: Extraction:  69%|██████▉   | 67/97 [00:03<00:01, 18.85it/s]Running pass 1 of 1: Extraction:  75%|███████▌  | 73/97 [00:04<00:01, 15.63it/s]Running pass 1 of 1: Extraction:  75%|███████▌  | 73/97 [00:04<00:01, 15.62it/s]Running pass 1 of 1: Extraction:  81%|████████▏ | 79/97 [00:04<00:01, 17.24it/s]Running pass 1 of 1: Extraction:  81%|████████▏ | 79/97 [00:04<00:01, 17.24it/s]Running pass 1 of 1: Extraction:  88%|████████▊ | 85/97 [00:05<00:01, 11.45it/s]Running pass 1 of 1: Extraction:  88%|████████▊ | 85/97 [00:05<00:01, 11.45it/s]Running pass 1 of 1: Extraction:  93%|█████████▎| 90/97 [00:05<00:00, 14.88it/s]Running pass 1 of 1: Extraction:  93%|█████████▎| 90/97 [00:05<00:00, 14.88it/s]Running pass 1 of 1: Extraction: 100%|██████████| 97/97 [00:05<00:00, 16.97it/s]Running pass 1 of 1: Extraction: 100%|██████████| 97/97 [00:05<00:00, 16.97it/s]Running pass 1 of 1: Extraction: 100%|██████████| 97/97 [00:05<00:00, 16.47it/s]
+11/12/2020 14:40:14 INFO     Writing alignments to: '/home/chenmis/cluster/faceSwapProject/src/faceB_alignments.fsa'
+11/12/2020 14:40:14 INFO     -------------------------
+11/12/2020 14:40:14 INFO     Images found:        97
+11/12/2020 14:40:14 INFO     Faces detected:      97
+11/12/2020 14:40:14 INFO     -------------------------
+11/12/2020 14:40:14 INFO     Process Succesfully Completed. Shutting Down...
+Traceback (most recent call last):
+  File "train.py", line 3, in <module>
+    p.communicate(input=ord("\n"))
+  File "/home/chenmis/.conda/envs/py37/lib/python3.7/subprocess.py", line 949, in communicate
+    self._stdin_write(input)
+  File "/home/chenmis/.conda/envs/py37/lib/python3.7/subprocess.py", line 898, in _stdin_write
+    self.stdin.write(input)
+TypeError: a bytes-like object is required, not 'int'
+Analyzing Video:   0%|          | 0/6 [00:00<?, ?secs/s]                                                        Setting Faceswap backend to NVIDIA
+11/12/2020 14:40:24 INFO     Log level set to: INFO
+11/12/2020 14:41:02 INFO     Reading alignments from: '/home/chenmis/cluster/faceSwapProject/src/faceA_alignments.fsa'
+11/12/2020 14:41:02 INFO     Loading Writer from Opencv plugin...
+Converting:   0%|          | 0/95 [00:00<?, ?it/s]                                                  11/12/2020 14:41:03 ERROR    There should be 1 state file in your model folder. 0 were found. Specify a trainer with the '-t', '--trainer' option.
+Converting:   0%|          | 0/95 [00:00<?, ?it/s]Converting:   0%|          | 0/95 [00:00<?, ?it/s]
