@@ -43,7 +43,7 @@ source activate py37                          ### activating environment, enviro
 python ../faceswap/faceswap.py extract -i faceSwapProject/src/faceA.mp4 -o faceSwapProject/faceA
 python ../faceswap/faceswap.py extract -i faceSwapProject/src/faceB.mp4 -o faceSwapProject/faceB
 
-python train.py
+### python train.py
 
 python ../faceswap/faceswap.py convert -i faceSwapProject/src/faceA.mp4 -o faceSwapProject -m faceSwapProject/ModelAB ###
 
