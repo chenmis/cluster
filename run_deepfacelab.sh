@@ -21,4 +21,4 @@ echo "SLURM_JOB_NODELIST"=$SLURM_JOB_NODELIST
 module load anaconda                          ### load anaconda module
 source activate deepfacelab   
 
-bash -i ../DeepFaceLab_Linux/scripts/2_extract_image_from_data_src.sh
+bash -i ../scripts/2_extract_image_from_data_src.sh
