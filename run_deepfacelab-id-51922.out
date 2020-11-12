@@ -1,0 +1,5 @@
+SLURM_JOBID=51922
+SLURM_JOB_NODELIST=ise-1080-04
+bash: no job control in this shell
+bash: env.sh: No such file or directory
+bash: /main.py: No such file or directory
