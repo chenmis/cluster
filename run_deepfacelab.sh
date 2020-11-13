@@ -19,6 +19,6 @@ echo "SLURM_JOB_NODELIST"=$SLURM_JOB_NODELIST
 ### Start you code below ####
 
 module load anaconda                          ### load anaconda module
-source activate deepfacelab   
+source activate py37   
 
 bash -i ./2_extract_image_from_data_src.sh
