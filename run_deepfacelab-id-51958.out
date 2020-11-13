@@ -1,0 +1,4 @@
+SLURM_JOBID=51958
+SLURM_JOB_NODELIST=ise-1080-04
+bash: no job control in this shell
+bash: python3.6: command not found
