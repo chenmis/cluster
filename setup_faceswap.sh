@@ -40,10 +40,10 @@ source activate py37                          ### activating environment, enviro
 ### mkdir faceSwapProject/modelAB ###
 ### mkdir faceSwapProject/TimelapseAB ###
 
-python ../faceswap/faceswap.py extract -i faceSwapProject/src/faceA.mp4 -o faceSwapProject/faceA -A fan -D s3fd
-python ../faceswap/faceswap.py extract -i faceSwapProject/src/faceB.mp4 -o faceSwapProject/faceB -A fan -D s3fd
+python ../faceswap/faceswap.py extract -i faceSwapProject/src/faceA.mp4 -o faceSwapProject/faceA -D s3fd -A fan 
+python ../faceswap/faceswap.py extract -i faceSwapProject/src/faceB.mp4 -o faceSwapProject/faceB -D s3fd -A fan 
 
-python ../faceswap/faceswap.py train -A faceSwapProject/faceA -B faceSwapProject/faceB -m faceSwapProject/ModelAB -tia faceSwapProject/faceA -tib faceSwapProject/faceB -to faceSwapProject/TimelapseAB
+python ../faceswap/faceswap.py train -A faceSwapProject/faceA -B faceSwapProject/faceB -m faceSwapProject/ModelAB -t original -tia faceSwapProject/faceA -tib faceSwapProject/faceB -to faceSwapProject/TimelapseAB
 
 python ../faceswap/faceswap.py convert -i faceSwapProject/src/faceA.mp4 -o faceSwapProject -m faceSwapProject/ModelAB 
 
