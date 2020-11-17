@@ -45,5 +45,5 @@ python ../faceswap/faceswap.py extract -i faceSwapProject/src/faceB.mp4 -o faceS
 
 python ../faceswap/faceswap.py train -A faceSwapProject/faceA -ala faceSwapProject/src/faceA_alignments.fsa -alb faceSwapProject/src/faceB_alignments.fsa -B faceSwapProject/faceB -m faceSwapProject/ModelAB -t original -tia faceSwapProject/faceA -tib faceSwapProject/faceB -to faceSwapProject/TimelapseAB
 
-python ../faceswap/faceswap.py convert -i faceSwapProject/src/faceA.mp4 -o faceSwapProject -m faceSwapProject/ModelAB 
+python ../faceswap/faceswap.py convert -i faceSwapProject/src/faceA.mp4 -o faceSwapProject -m faceSwapProject/ModelAB -c match-hist -M extended -w ffmpeg 
 
