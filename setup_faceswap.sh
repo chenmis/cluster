@@ -35,15 +35,16 @@ source activate py37                          ### activating environment, enviro
 ### python ../faceswap/faceswap.py train -h ###
 ### python ../faceswap/faceswap.py convert -h ###
 
-### mkdir faceSwapProject/faceA ###
-### mkdir faceSwapProject/faceA ###
-### mkdir faceSwapProject/modelAB ###
-### mkdir faceSwapProject/TimelapseAB ###
+mkdir Project
+mkdir Project/faceA
+mkdir faceSwapProject/faceA
+mkdir faceSwapProject/modelAB
+mkdir faceSwapProject/TimelapseAB
 
-python ../faceswap/faceswap.py extract -i faceSwapProject/src/faceA.mp4 -o faceSwapProject/faceA -D s3fd -A fan 
-python ../faceswap/faceswap.py extract -i faceSwapProject/src/faceB.mp4 -o faceSwapProject/faceB -D s3fd -A fan 
+python ../faceswap/faceswap.py extract -i Project/src/faceA.mp4 -o Project/faceA -D s3fd -A fan 
+python ../faceswap/faceswap.py extract -i Project/src/faceB.mp4 -o Project/faceB -D s3fd -A fan 
 
-python ../faceswap/faceswap.py train -A faceSwapProject/faceA -ala faceSwapProject/src/faceA_alignments.fsa -alb faceSwapProject/src/faceB_alignments.fsa -B faceSwapProject/faceB -m faceSwapProject/ModelAB -t original -tia faceSwapProject/faceA -tib faceSwapProject/faceB -to faceSwapProject/TimelapseAB
+python ../faceswap/faceswap.py train -A Project/faceA -ala Project/src/faceA_alignments.fsa -alb Project/src/faceB_alignments.fsa -B Project/faceB -m Project/ModelAB -t original -tia Project/faceA -tib Project/faceB -to Project/TimelapseAB
 
-python ../faceswap/faceswap.py convert -i faceSwapProject/src/faceA.mp4 -o faceSwapProject -m faceSwapProject/ModelAB -c match-hist -M extended -w ffmpeg 
+python ../faceswap/faceswap.py convert -i Project/src/faceA.mp4 -o Project -m Project/ModelAB -c match-hist -M extended -w ffmpeg 
 
